@@ -1,0 +1,33 @@
+body {
+    background: whitesmoke;
+}
+
+.music_container {
+    height: 70vh;
+    width: 20vw;
+    margin-top: 80px;
+    background: white;
+    border-radius: 20px;
+}
+
+#music_image {
+    height: 12vw;
+    width: 12vw;
+}
+
+.anim {
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.progress {
+    cursor: pointer;
+}

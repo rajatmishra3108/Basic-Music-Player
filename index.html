@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- My Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- My Custom JavaScript -->
+    <script src="index.js" defer></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="mx-auto d-flex music_container text-center flex-column shadow-lg container">
+
+        <!-- Music Description -->
+        <div class="my-3">
+            <h3 class="font-weight-normal" id="title">Mask Off</h3>
+            <h5 class="mt-3 text-muted" id="singer">Future</h5>
+        </div>
+
+        <!-- Music Logo -->
+        <div id="music_image" class="mx-auto">
+            <img id="logo" class="img-fluid rounded-circle h-100 w-100 shadow-lg" src="music logo/music1.jpg"
+                alt="Image1">
+        </div>
+
+        <!-- Music Duration Bar -->
+        <div class="my-5">
+            <!-- Current Time and Song Duration -->
+            <div class="duration d-flex justify-content-between">
+                <div id="current_time">0:00</div>
+                <div id="song_duration">0:00</div>
+            </div>
+            <!-- Song Progress -->
+            <div id="progressBar" class="progress shadow-sm" style="height: 5px;">
+                <div id="music-duration" class="progress-bar bg-dark" role="progressbar" aria-valuenow="25"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        
+        <!-- Prev Play and Next Button -->
+        <audio src="music/music1.mp3"></audio>
+        <div class="d-flex mt-3 mx-auto w-75 justify-content-between" id="controls">
+            <i id="prev" class="fa fa-step-backward btn" data-toggle="tooltip" data-placement="left" title="prev"
+                aria-hidden="true"></i>
+            <i id="play" class="fa fa-play btn rounded-pill" data-toggle="tooltip" data-placement="top" title="play"
+                aria-hidden="true"></i>
+            <i id="next" class="fa fa-step-forward btn" data-toggle="tooltip" data-placement="right" title="next"
+                aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
